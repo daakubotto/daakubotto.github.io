@@ -1,0 +1,125 @@
+
+h1, h2, h3, h4 {
+    color: white;
+}
+.window {
+    height: 100vh;
+}
+body {
+  overflow-y: hidden;
+}
+
+.sidebar {
+    background-color: rgba(0, 0, 0, 0.7);
+    min-width: 200px;
+}
+.quiz {
+    max-width: calc(100vw - 201px);
+}
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.flex-center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vraag-container {
+  height: 85%;
+  width: 85%;
+  min-width: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.vraag-vraag {
+  background-color: rgba(255,255,255,0.7);
+  height: 20%;
+  min-height: 50px;
+  border-radius: 50px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.vraag-antwoord {
+  flex-grow: 1;
+  background-color: rgba(255,255,255,0.7);
+  min-height: 200px;
+  border-radius: 50px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-nav {
+    height: 60px;
+    background-color: var(--teal)
+}
+
+.bottom-nav-button-left {
+    display: flex;
+    justify-content: flex-start;
+}
+.bottom-nav-button-right {
+    display: flex;
+    justify-content: flex-end;
+}
+.timer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.timer > h3 {
+    margin-bottom: 0;
+}
+.progress-bar {
+    min-height: 20px;
+}
+
+body {
+    background-image: url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.flex-dont-grow-height {
+  flex: 0 1 auto;
+}
+.flex-grow-height {
+  flex: 1 1 auto;
+}
+
+#toets-vraag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#toets-vraag > * {
+  color: black;
+}
+
+.antwoord {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.multiple-choice-div {
+  width: 50%;
+  height: 10%
+}
+
+.content-left {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding: 0;
+}
+.content-right {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  padding: 0;
+}
