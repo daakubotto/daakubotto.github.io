@@ -11,14 +11,20 @@
 </head>
 <body>
     <div class="window container-fluid row mx-0 px-0">
-        <div class="sidebar col-2 mx-0 px-0">
+        <div class="sidebar col-2 mx-0 px-0 d-flex flex-column">
             <div class="gegevens">
-                <h2>Naam</h2>
-                <input type="text" >
-                <h2>Klas</h2>
-                <input type="text">
+                <div class="gegevens-item">
+                    <h2>Naam</h2>
+                    <input type="text" >
+                </div>
+                <div class="gegevens-item">
+                    <h2>Klas</h2>
+                    <input type="text">
+                </div>
             </div>
+            <div class="flex-grow-height"></div>
             <div class="cijfer">
+                <h1>Cijfer:</h1><br>
                 <h1>6.0</h1>
             </div>
         </div>
@@ -26,32 +32,38 @@
             <div class="flex-grow-height flex-center-div">
                 <div class="vraag-container">
                     <div class="vraag-vraag">
-                        <div id="toets-vraag"><h3>Hoeveel is 21 x 12</h3></div>
+                        <div id="toets-vraag"></div>
                     </div>
                     <div class="vraag-antwoord row">
                         <div class="antwoord flex-grow-height">
                             <div class="multiple-choice-div">
-                              <button id="button-1" class=""><span id="answer-1"></span></button>
+                                <button id="choice-1" class="btn btn-primary multiple-choice-btn"><span id="answer-1"></span></button>
                             </div>
                             <div class="multiple-choice-div">
-                              <button id="button-2" class="multiple-choice-btn"><span id="answer-2"></span></button>
+                                <button id="choice-2" class="btn btn-primary multiple-choice-btn"><span id="answer-2"></span></button>
                             </div>
                             <div class="multiple-choice-div">
-                              <button id="button-3" class="multiple-choice-btn"><span id="answer-3"></span></button>
+                                <button id="choice-3" class="btn btn-primary multiple-choice-btn"><span id="answer-3"></span></button>
                             </div>
                             <div class="multiple-choice-div">
-                              <button id="button-4" class="multiple-choice-btn"><span id="answer-4"></span></button>
+                                <button id="choice-4" class="btn btn-primary multiple-choice-btn"><span id="answer-4"></span></button>
                             </div>
                         </div>
                         <div class="d-flex row">
-                            <div class="col-3 content-left">
+                            <div class="content-left">
                                 <button id="vorige" class="btn btn-primary">Vorige</button>
                             </div>
-                            <div class="col-6">
-
+                            <div class="vraag-navigatie">
+                                <button type="button" class="btn btn-active btn-primary btn-circle" id="vooruitgang-1"><span id="nav-button-1">1</span></button>
+                                <button type="button" class="btn btn-primary btn-circle" id="vooruitgang-2"><span id="nav-button-2">2</span></button>
+                                <button type="button" class="btn btn-primary btn-circle" id="vooruitgang-3"><span id="nav-button-3">3</span></button>
+                                <button type="button" class="btn btn-primary btn-circle" id="vooruitgang-4"><span id="nav-button-4">4</span></button>
+                                <button type="button" class="btn btn-primary btn-circle" id="vooruitgang-2"><span id="nav-button-2">5</span></button>
+                                <button type="button" class="btn btn-primary btn-circle" id="vooruitgang-3"><span id="nav-button-3">6</span></button>
+                                <button type="button" class="btn btn-primary btn-circle" id="vooruitgang-4"><span id="nav-button-4">7</span></button>
                             </div>
-                            <div class="col-3 content-right">
-                                <button id="vorige" class="btn btn-primary">Volgende</button>
+                            <div class="content-right">
+                                <button id="volgende" class="btn btn-primary">Volgende</button>
                             </div>
                         </div>
                     </div>
@@ -73,5 +85,6 @@
             </div>
         </div>
     </div>
+    
 </body>
 </html>

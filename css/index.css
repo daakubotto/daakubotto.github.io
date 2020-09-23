@@ -1,3 +1,9 @@
+:root {
+  --primary: #2589BD !important;
+  --secondary: #3694C7 !important;
+  --trinary: #2D80AD !important;
+  --active: #43BAFA !important;
+}
 
 h1, h2, h3, h4 {
     color: white;
@@ -13,6 +19,31 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     min-width: 200px;
 }
+.gegevens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gegevens-item {
+  width: 100%;
+  padding: 20px;
+}
+.gegevens-item > input {
+  width: 100%;
+}
+.cijfer {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cijfer > h1 {
+  text-align: center;
+}
+
 .quiz {
     max-width: calc(100vw - 201px);
 }
@@ -40,7 +71,7 @@ body {
   min-height: 50px;
   border-radius: 50px;
   padding: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .vraag-antwoord {
   flex-grow: 1;
@@ -54,7 +85,7 @@ body {
 
 .bottom-nav {
     height: 60px;
-    background-color: var(--teal)
+    background-color: #3694C7;
 }
 
 .bottom-nav-button-left {
@@ -96,19 +127,26 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-}
-#toets-vraag > * {
-  color: black;
+  font-weight: 700;
+  font-size: 3.9rem;
 }
 
 .antwoord {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 50px;
 }
 .multiple-choice-div {
   width: 50%;
-  height: 10%
+  height: 50%;
+  padding: 20px;
+}
+.multiple-choice-div > button {
+  background-color: #3694C7;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
 }
 
 .content-left {
@@ -116,10 +154,59 @@ body {
   justify-content: flex-start;
   align-content: flex-start;
   padding: 0;
+  width: 150px;
+  max-width: 150px;
+  min-width: 150px;
+  padding-right: 50px;
 }
 .content-right {
   display: flex;
   justify-content: flex-end;
   align-content: flex-end;
   padding: 0;
+  width: 150px;
+  max-width: 150px;
+  min-width: 150px;
+  padding-left: 50px;
+}
+
+.multiple-choice-btn {
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+}
+
+@media only screen and (max-width: 992px) {
+  .multiple-choice-div {
+    width: 100%;
+    height: 25%;
+    padding: 10px 20px 0;
+
+  }
+}
+@media only screen and (max-width: 768px) {
+  .antwoord {
+    padding: 50px 0;
+  }
+}
+
+.btn-circle {
+  height: 50px;
+  width: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.vraag-navigatie {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  flex-wrap: nowrap;
+  width: calc(100% - 150px - 150px );
+}
+
+.selected-choice {
+  background-color: var(--active) !important;
 }
