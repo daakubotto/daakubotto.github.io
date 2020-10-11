@@ -173,7 +173,7 @@ body {
 .multiple-choice-btn {
   font-size: 3rem;
   font-weight: 700;
-  color: black;
+  color: white;
 }
 
 @media only screen and (max-width: 992px) {
@@ -201,6 +201,7 @@ body {
 
 .vraag-navigatie {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   overflow-x: hidden;
   flex-wrap: nowrap;
@@ -208,5 +209,14 @@ body {
 }
 
 .selected-choice {
-  background-color: var(--active) !important;
+  background-color: orange !important;
+  border-color: rgb(255, 145, 0) !important;
+  box-shadow: none !important;
 }
+
+.btn-active {
+  background-color: orange !important;
+  border-color: rgb(255, 145, 0) !important;
+  box-shadow: none !important;
+}
+
